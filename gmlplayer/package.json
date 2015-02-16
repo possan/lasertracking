@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "node-osc": "^0.3.0"
+  }
+}
