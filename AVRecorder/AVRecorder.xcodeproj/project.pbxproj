@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FC9301E139D85A500DA0D4F /* AVCaptureDeviceFormat_AVRecorderAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC9301D139D85A500DA0D4F /* AVCaptureDeviceFormat_AVRecorderAdditions.m */; };
+		2FC93021139D875D00DA0D4F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC93020139D875D00DA0D4F /* CoreMedia.framework */; };
+		2FC93025139D8CC500DA0D4F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC93024139D8CC500DA0D4F /* AudioToolbox.framework */; };
+		2FC93049139D988300DA0D4F /* AVFrameRateRange_AVRecorderAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC93048139D988300DA0D4F /* AVFrameRateRange_AVRecorderAdditions.m */; };
+		953F10111A893ECC00CAAF3C /* ColorLevelsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 953F10101A893ECC00CAAF3C /* ColorLevelsVC.xib */; };
+		953F10141A893EE700CAAF3C /* ColorLevelsVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 953F10131A893EE700CAAF3C /* ColorLevelsVC.mm */; };
+		953F10191A894B8D00CAAF3C /* ColorFilterVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 953F10171A894B8D00CAAF3C /* ColorFilterVC.mm */; };
+		953F101A1A894B8D00CAAF3C /* ColorFilterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 953F10181A894B8D00CAAF3C /* ColorFilterVC.xib */; };
+		953F101E1A8951AE00CAAF3C /* UnwrapVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 953F101C1A8951AE00CAAF3C /* UnwrapVC.mm */; };
+		953F101F1A8951AE00CAAF3C /* UnwrapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 953F101D1A8951AE00CAAF3C /* UnwrapVC.xib */; };
+		953F10231A89594400CAAF3C /* BlobTrackingVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 953F10211A89594400CAAF3C /* BlobTrackingVC.mm */; };
+		953F10241A89594400CAAF3C /* BlobTrackingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 953F10221A89594400CAAF3C /* BlobTrackingVC.xib */; };
+		953F10271A89785300CAAF3C /* ClickableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 953F10261A89785300CAAF3C /* ClickableImageView.m */; };
+		95BD4D631A860D0C001A0CAD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD4D621A860D0C001A0CAD /* CoreVideo.framework */; };
+		95D936D91A86572900602478 /* pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936D71A86572900602478 /* pipeline.cpp */; };
+		95D936DC1A86578500602478 /* RawVideoInputNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936DA1A86578500602478 /* RawVideoInputNode.cpp */; };
+		95D936DF1A8657AF00602478 /* PerspectiveUnwrapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936DD1A8657AF00602478 /* PerspectiveUnwrapNode.cpp */; };
+		95D936E21A8657CE00602478 /* BlobTrackerNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936E01A8657CE00602478 /* BlobTrackerNode.cpp */; };
+		95D936E51A8657E900602478 /* ColorFilterNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936E31A8657E900602478 /* ColorFilterNode.cpp */; };
+		95D936E81A8657FA00602478 /* ColorLevelsNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936E61A8657FA00602478 /* ColorLevelsNode.cpp */; };
+		95D936EB1A8660CB00602478 /* DebugImageNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936E91A8660CB00602478 /* DebugImageNode.cpp */; };
+		95D936EE1A8663F600602478 /* OSCNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936EC1A8663F600602478 /* OSCNode.cpp */; };
+		95D936F11A86658800602478 /* ThresholdFilterNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D936EF1A86658800602478 /* ThresholdFilterNode.cpp */; };
+		E9C967D3137B516200C6D18B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C967D2137B516200C6D18B /* Cocoa.framework */; };
+		E9C967DD137B516200C6D18B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9C967DB137B516200C6D18B /* InfoPlist.strings */; };
+		E9C967DF137B516200C6D18B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C967DE137B516200C6D18B /* main.m */; };
+		E9C967E6137B516200C6D18B /* AVRecorderDocument.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9C967E5137B516200C6D18B /* AVRecorderDocument.mm */; };
+		E9C967E9137B516200C6D18B /* AVRecorderDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C967E7137B516200C6D18B /* AVRecorderDocument.xib */; };
+		E9C967EC137B516200C6D18B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C967EA137B516200C6D18B /* MainMenu.xib */; };
+		E9C967F8137B51A700C6D18B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C967F7137B51A700C6D18B /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28CF708F1667DCB20091B82E /* Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Read Me.txt"; sourceTree = "<group>"; };
+		2FC9301C139D85A500DA0D4F /* AVCaptureDeviceFormat_AVRecorderAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureDeviceFormat_AVRecorderAdditions.h; sourceTree = "<group>"; };
+		2FC9301D139D85A500DA0D4F /* AVCaptureDeviceFormat_AVRecorderAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureDeviceFormat_AVRecorderAdditions.m; sourceTree = "<group>"; };
+		2FC93020139D875D00DA0D4F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2FC93024139D8CC500DA0D4F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2FC93047139D988300DA0D4F /* AVFrameRateRange_AVRecorderAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFrameRateRange_AVRecorderAdditions.h; sourceTree = "<group>"; };
+		2FC93048139D988300DA0D4F /* AVFrameRateRange_AVRecorderAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFrameRateRange_AVRecorderAdditions.m; sourceTree = "<group>"; };
+		953F10101A893ECC00CAAF3C /* ColorLevelsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorLevelsVC.xib; sourceTree = "<group>"; };
+		953F10121A893EE700CAAF3C /* ColorLevelsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLevelsVC.h; sourceTree = "<group>"; };
+		953F10131A893EE700CAAF3C /* ColorLevelsVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ColorLevelsVC.mm; sourceTree = "<group>"; };
+		953F10151A89461B00CAAF3C /* NodeEditorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeEditorProtocol.h; sourceTree = "<group>"; };
+		953F10161A894B8D00CAAF3C /* ColorFilterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorFilterVC.h; sourceTree = "<group>"; };
+		953F10171A894B8D00CAAF3C /* ColorFilterVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ColorFilterVC.mm; sourceTree = "<group>"; };
+		953F10181A894B8D00CAAF3C /* ColorFilterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorFilterVC.xib; sourceTree = "<group>"; };
+		953F101B1A8951AE00CAAF3C /* UnwrapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnwrapVC.h; sourceTree = "<group>"; };
+		953F101C1A8951AE00CAAF3C /* UnwrapVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnwrapVC.mm; sourceTree = "<group>"; };
+		953F101D1A8951AE00CAAF3C /* UnwrapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnwrapVC.xib; sourceTree = "<group>"; };
+		953F10201A89594400CAAF3C /* BlobTrackingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobTrackingVC.h; sourceTree = "<group>"; };
+		953F10211A89594400CAAF3C /* BlobTrackingVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlobTrackingVC.mm; sourceTree = "<group>"; };
+		953F10221A89594400CAAF3C /* BlobTrackingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlobTrackingVC.xib; sourceTree = "<group>"; };
+		953F10251A89785300CAAF3C /* ClickableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableImageView.h; sourceTree = "<group>"; };
+		953F10261A89785300CAAF3C /* ClickableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableImageView.m; sourceTree = "<group>"; };
+		95BD4D621A860D0C001A0CAD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		95D936D71A86572900602478 /* pipeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pipeline.cpp; path = ../../pipelines/pipeline.cpp; sourceTree = "<group>"; };
+		95D936D81A86572900602478 /* pipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pipeline.h; path = ../../pipelines/pipeline.h; sourceTree = "<group>"; };
+		95D936DA1A86578500602478 /* RawVideoInputNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RawVideoInputNode.cpp; sourceTree = "<group>"; };
+		95D936DB1A86578500602478 /* RawVideoInputNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawVideoInputNode.h; sourceTree = "<group>"; };
+		95D936DD1A8657AF00602478 /* PerspectiveUnwrapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerspectiveUnwrapNode.cpp; sourceTree = "<group>"; };
+		95D936DE1A8657AF00602478 /* PerspectiveUnwrapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerspectiveUnwrapNode.h; sourceTree = "<group>"; };
+		95D936E01A8657CE00602478 /* BlobTrackerNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlobTrackerNode.cpp; sourceTree = "<group>"; };
+		95D936E11A8657CE00602478 /* BlobTrackerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobTrackerNode.h; sourceTree = "<group>"; };
+		95D936E31A8657E900602478 /* ColorFilterNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorFilterNode.cpp; sourceTree = "<group>"; };
+		95D936E41A8657E900602478 /* ColorFilterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorFilterNode.h; sourceTree = "<group>"; };
+		95D936E61A8657FA00602478 /* ColorLevelsNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorLevelsNode.cpp; sourceTree = "<group>"; };
+		95D936E71A8657FA00602478 /* ColorLevelsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLevelsNode.h; sourceTree = "<group>"; };
+		95D936E91A8660CB00602478 /* DebugImageNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugImageNode.cpp; sourceTree = "<group>"; };
+		95D936EA1A8660CB00602478 /* DebugImageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugImageNode.h; sourceTree = "<group>"; };
+		95D936EC1A8663F600602478 /* OSCNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSCNode.cpp; sourceTree = "<group>"; };
+		95D936ED1A8663F600602478 /* OSCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCNode.h; sourceTree = "<group>"; };
+		95D936EF1A86658800602478 /* ThresholdFilterNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThresholdFilterNode.cpp; sourceTree = "<group>"; };
+		95D936F01A86658800602478 /* ThresholdFilterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThresholdFilterNode.h; sourceTree = "<group>"; };
+		95D936F21A86697A00602478 /* misc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		E9C967CE137B516200C6D18B /* AVRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C967D2137B516200C6D18B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E9C967DA137B516200C6D18B /* AVRecorder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVRecorder-Info.plist"; sourceTree = "<group>"; };
+		E9C967DC137B516200C6D18B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9C967DE137B516200C6D18B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9C967E0137B516200C6D18B /* AVRecorder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVRecorder-Prefix.pch"; sourceTree = "<group>"; };
+		E9C967E4137B516200C6D18B /* AVRecorderDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVRecorderDocument.h; sourceTree = "<group>"; };
+		E9C967E5137B516200C6D18B /* AVRecorderDocument.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AVRecorderDocument.mm; sourceTree = "<group>"; };
+		E9C967E8137B516200C6D18B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AVRecorderDocument.xib; sourceTree = "<group>"; };
+		E9C967EB137B516200C6D18B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E9C967F7137B51A700C6D18B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9C967CB137B516200C6D18B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BD4D631A860D0C001A0CAD /* CoreVideo.framework in Frameworks */,
+				E9C967F8137B51A700C6D18B /* AVFoundation.framework in Frameworks */,
+				2FC93025139D8CC500DA0D4F /* AudioToolbox.framework in Frameworks */,
+				E9C967D3137B516200C6D18B /* Cocoa.framework in Frameworks */,
+				2FC93021139D875D00DA0D4F /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9535D5F91A86A6E4000862C8 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				95D936D71A86572900602478 /* pipeline.cpp */,
+				95D936D81A86572900602478 /* pipeline.h */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		9535D5FA1A86A6EB000862C8 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				95D936DA1A86578500602478 /* RawVideoInputNode.cpp */,
+				95D936DB1A86578500602478 /* RawVideoInputNode.h */,
+				95D936DD1A8657AF00602478 /* PerspectiveUnwrapNode.cpp */,
+				95D936DE1A8657AF00602478 /* PerspectiveUnwrapNode.h */,
+				95D936E01A8657CE00602478 /* BlobTrackerNode.cpp */,
+				95D936E11A8657CE00602478 /* BlobTrackerNode.h */,
+				95D936E31A8657E900602478 /* ColorFilterNode.cpp */,
+				95D936E41A8657E900602478 /* ColorFilterNode.h */,
+				95D936E61A8657FA00602478 /* ColorLevelsNode.cpp */,
+				95D936E71A8657FA00602478 /* ColorLevelsNode.h */,
+				95D936E91A8660CB00602478 /* DebugImageNode.cpp */,
+				95D936EA1A8660CB00602478 /* DebugImageNode.h */,
+				95D936EC1A8663F600602478 /* OSCNode.cpp */,
+				95D936ED1A8663F600602478 /* OSCNode.h */,
+				95D936EF1A86658800602478 /* ThresholdFilterNode.cpp */,
+				95D936F01A86658800602478 /* ThresholdFilterNode.h */,
+				95D936F21A86697A00602478 /* misc.h */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		E9C967C3137B516100C6D18B = {
+			isa = PBXGroup;
+			children = (
+				28CF708F1667DCB20091B82E /* Read Me.txt */,
+				E9C967D8137B516200C6D18B /* AVRecorder */,
+				E9C967D1137B516200C6D18B /* Frameworks */,
+				E9C967CF137B516200C6D18B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9C967CF137B516200C6D18B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9C967CE137B516200C6D18B /* AVRecorder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9C967D1137B516200C6D18B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95BD4D621A860D0C001A0CAD /* CoreVideo.framework */,
+				2FC93024139D8CC500DA0D4F /* AudioToolbox.framework */,
+				E9C967F7137B51A700C6D18B /* AVFoundation.framework */,
+				E9C967D2137B516200C6D18B /* Cocoa.framework */,
+				2FC93020139D875D00DA0D4F /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C967D8137B516200C6D18B /* AVRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				9535D5FA1A86A6EB000862C8 /* Nodes */,
+				9535D5F91A86A6E4000862C8 /* Graph */,
+				E9C967E4137B516200C6D18B /* AVRecorderDocument.h */,
+				E9C967E5137B516200C6D18B /* AVRecorderDocument.mm */,
+				2FC9301C139D85A500DA0D4F /* AVCaptureDeviceFormat_AVRecorderAdditions.h */,
+				2FC9301D139D85A500DA0D4F /* AVCaptureDeviceFormat_AVRecorderAdditions.m */,
+				2FC93047139D988300DA0D4F /* AVFrameRateRange_AVRecorderAdditions.h */,
+				2FC93048139D988300DA0D4F /* AVFrameRateRange_AVRecorderAdditions.m */,
+				E9C967E7137B516200C6D18B /* AVRecorderDocument.xib */,
+				E9C967EA137B516200C6D18B /* MainMenu.xib */,
+				E9C967D9137B516200C6D18B /* Supporting Files */,
+				953F10101A893ECC00CAAF3C /* ColorLevelsVC.xib */,
+				953F10131A893EE700CAAF3C /* ColorLevelsVC.mm */,
+				953F10121A893EE700CAAF3C /* ColorLevelsVC.h */,
+				953F10151A89461B00CAAF3C /* NodeEditorProtocol.h */,
+				953F10181A894B8D00CAAF3C /* ColorFilterVC.xib */,
+				953F10171A894B8D00CAAF3C /* ColorFilterVC.mm */,
+				953F10161A894B8D00CAAF3C /* ColorFilterVC.h */,
+				953F101B1A8951AE00CAAF3C /* UnwrapVC.h */,
+				953F101C1A8951AE00CAAF3C /* UnwrapVC.mm */,
+				953F101D1A8951AE00CAAF3C /* UnwrapVC.xib */,
+				953F10201A89594400CAAF3C /* BlobTrackingVC.h */,
+				953F10211A89594400CAAF3C /* BlobTrackingVC.mm */,
+				953F10221A89594400CAAF3C /* BlobTrackingVC.xib */,
+				953F10251A89785300CAAF3C /* ClickableImageView.h */,
+				953F10261A89785300CAAF3C /* ClickableImageView.m */,
+			);
+			path = AVRecorder;
+			sourceTree = "<group>";
+		};
+		E9C967D9137B516200C6D18B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9C967DA137B516200C6D18B /* AVRecorder-Info.plist */,
+				E9C967DB137B516200C6D18B /* InfoPlist.strings */,
+				E9C967DE137B516200C6D18B /* main.m */,
+				E9C967E0137B516200C6D18B /* AVRecorder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9C967CD137B516200C6D18B /* AVRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C967EF137B516200C6D18B /* Build configuration list for PBXNativeTarget "AVRecorder" */;
+			buildPhases = (
+				E9C967CA137B516200C6D18B /* Sources */,
+				E9C967CB137B516200C6D18B /* Frameworks */,
+				E9C967CC137B516200C6D18B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVRecorder;
+			productName = AVRecorder;
+			productReference = E9C967CE137B516200C6D18B /* AVRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9C967C5137B516100C6D18B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = E9C967C8137B516100C6D18B /* Build configuration list for PBXProject "AVRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9C967C3137B516100C6D18B;
+			productRefGroup = E9C967CF137B516200C6D18B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9C967CD137B516200C6D18B /* AVRecorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9C967CC137B516200C6D18B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C967DD137B516200C6D18B /* InfoPlist.strings in Resources */,
+				953F10241A89594400CAAF3C /* BlobTrackingVC.xib in Resources */,
+				953F10111A893ECC00CAAF3C /* ColorLevelsVC.xib in Resources */,
+				E9C967E9137B516200C6D18B /* AVRecorderDocument.xib in Resources */,
+				E9C967EC137B516200C6D18B /* MainMenu.xib in Resources */,
+				953F101A1A894B8D00CAAF3C /* ColorFilterVC.xib in Resources */,
+				953F101F1A8951AE00CAAF3C /* UnwrapVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9C967CA137B516200C6D18B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D936E51A8657E900602478 /* ColorFilterNode.cpp in Sources */,
+				953F10191A894B8D00CAAF3C /* ColorFilterVC.mm in Sources */,
+				E9C967DF137B516200C6D18B /* main.m in Sources */,
+				95D936E81A8657FA00602478 /* ColorLevelsNode.cpp in Sources */,
+				95D936DF1A8657AF00602478 /* PerspectiveUnwrapNode.cpp in Sources */,
+				E9C967E6137B516200C6D18B /* AVRecorderDocument.mm in Sources */,
+				95D936D91A86572900602478 /* pipeline.cpp in Sources */,
+				2FC9301E139D85A500DA0D4F /* AVCaptureDeviceFormat_AVRecorderAdditions.m in Sources */,
+				95D936F11A86658800602478 /* ThresholdFilterNode.cpp in Sources */,
+				95D936EE1A8663F600602478 /* OSCNode.cpp in Sources */,
+				953F10231A89594400CAAF3C /* BlobTrackingVC.mm in Sources */,
+				95D936E21A8657CE00602478 /* BlobTrackerNode.cpp in Sources */,
+				953F101E1A8951AE00CAAF3C /* UnwrapVC.mm in Sources */,
+				2FC93049139D988300DA0D4F /* AVFrameRateRange_AVRecorderAdditions.m in Sources */,
+				953F10141A893EE700CAAF3C /* ColorLevelsVC.mm in Sources */,
+				953F10271A89785300CAAF3C /* ClickableImageView.m in Sources */,
+				95D936DC1A86578500602478 /* RawVideoInputNode.cpp in Sources */,
+				95D936EB1A8660CB00602478 /* DebugImageNode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9C967DB137B516200C6D18B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C967DC137B516200C6D18B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E9C967E7137B516200C6D18B /* AVRecorderDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C967E8137B516200C6D18B /* en */,
+			);
+			name = AVRecorderDocument.xib;
+			sourceTree = "<group>";
+		};
+		E9C967EA137B516200C6D18B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C967EB137B516200C6D18B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9C967ED137B516200C6D18B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E9C967EE137B516200C6D18B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E9C967F0137B516200C6D18B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVRecorder/AVRecorder-Prefix.pch";
+				INFOPLIST_FILE = "AVRecorder/AVRecorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E9C967F1137B516200C6D18B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVRecorder/AVRecorder-Prefix.pch";
+				INFOPLIST_FILE = "AVRecorder/AVRecorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9C967C8137B516100C6D18B /* Build configuration list for PBXProject "AVRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C967ED137B516200C6D18B /* Debug */,
+				E9C967EE137B516200C6D18B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C967EF137B516200C6D18B /* Build configuration list for PBXNativeTarget "AVRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C967F0137B516200C6D18B /* Debug */,
+				E9C967F1137B516200C6D18B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9C967C5137B516100C6D18B /* Project object */;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BlobTrackingVC">
+            <connections>
+                <outlet property="previewImage" destination="5yx-yg-pTs" id="8eM-gm-gFZ"/>
+                <outlet property="previewImage2" destination="Ybm-fC-vaI" id="ks5-xc-40t"/>
+                <outlet property="threshold" destination="yAv-CY-2PA" id="5nL-SY-TU1"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="917" height="498"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAv-CY-2PA">
+                    <rect key="frame" x="0.0" y="130" width="47" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8EA-IX-pq7">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="valueChanged:" target="-2" id="2f9-xH-K62"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Un8-bC-1Wb">
+                    <rect key="frame" x="-2" y="161" width="94" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Blob threshold" id="ncC-G8-zLX">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ybm-fC-vaI">
+                    <rect key="frame" x="334" y="224" width="338" height="278"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" imageFrameStyle="grayBezel" id="2J6-zH-n4Q"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yx-yg-pTs">
+                    <rect key="frame" x="-3" y="223" width="338" height="278"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" imageFrameStyle="grayBezel" id="Lb9-sW-Iie"/>
+                </imageView>
+            </subviews>
+            <point key="canvasLocation" x="549.5" y="497"/>
+        </customView>
+    </objects>
+</document>
